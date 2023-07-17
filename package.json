@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "server": "node --max-http-header-size=20000 -r esm server.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.4.10",
+    "esm": "^3.2.25",
+    "koa": "^2.14.2",
+    "next": "^13.4.10",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }
